@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demorectory - Contact </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geist+Pixel&family=Jersey+25&family=Oswald:wght@200..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Press+Start+2P&family=Silkscreen:wght@400;700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=VT323&display=swap" rel="stylesheet">
+    <link rel ="stylesheet" href = "../styles/assignment1.css">
+    <link rel ="stylesheet" href ="../styles/contact.css">
+</head>
+<body>
+    <header class = "header">
+        <div class ="header-text">
+        <h1 class = "header-title">DEMORECTORY</h1>
+        <p class = "subtitle"> //welcome to demo>[di]rectory creative archive// </p>
+        </div>
+    </header>
+
+    <nav class ="menu">
+        <div class ="mobile-menu-trigger">
+            <img src = "../images/menu.jpg" alt = "menu-icon" height="50px" width="50px">
+        </div>
+        <div class = "mobile-menu-target">
+           <div class ="menu-item"> 
+               <a href ="../index.html"> HOME</a>
+           </div>
+           <div class ="menu-item"> 
+               <a href = "archive.html"> ARCHIVE</a>
+           </div>
+           <div class ="menu-item active">
+               <a href ="contact.html"> CONTACT</a>
+           </div>
+        </div>
+    </nav>
+
+    <main class ="main">
+
+         <form class ="contact-form" action="mailto:someone@gmail.com" method="POST" enctype="text/plain">
+            <fieldset>
+            <legend>personal information</legend>
+            <label for ="name"> NAME* </label>
+            <input required type ="text" id ="name" name = "name" placeholder="enter your name...">
+            <label for ="e-mail"> E-MAIL*</label>
+            <input required type ="text" id ="e-mail" name = "e-mail" placeholder="enter your e-mail adress...">
+            </fieldset>
+            
+           <div class="form-image">
+            <img src="../images/message.jpg" alt ="contact-image">
+           </div>
+
+            <fieldset>
+                <legend>comments</legend>
+                <label for ="comment">FEEL FREE TO SAY ANYTHING</label>
+                <textarea id ="comment" name ="comment"></textarea>
+                <label class ="checkbox-label"for ="more-info">SIGN ME UP FOR NEWSLETTER</label>
+                <input class="checkbox" type = "checkbox" checked id ="newsletter" name ="newsletter" value="information">
+                <label class ="checkbox-label"for ="more-info">ARCHIVE UPDATE ALERT</label>
+                <input class="checkbox" type = "checkbox" checked id ="alert" name ="alert" value="information">
+            </fieldset>
+
+            <div class="button-container">
+                <button class ="button" type="submit">SEND</button>
+            </div>            
+        </form>
+        
+
+    </main>
+    <footer class = "footer">
+          <p>&copy;2026 Jonatan Karlsson </p>
+    </footer>
+</body>
+</html>

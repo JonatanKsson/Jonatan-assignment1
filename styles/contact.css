@@ -1,0 +1,92 @@
+.contact-form {
+    padding:32px 16px;
+    background-color: rgba(0, 0, 0, 0.8);
+    border: 3px solid white;
+    color: white;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    font-family: 'Geist Pixel', Helvetica, sans-serif;
+}
+
+fieldset {
+    border-color:#ff551f;
+    border-width: 1px;
+    border-radius: 5px;
+    margin-bottom: 8px;
+}
+
+legend {
+    text-align: center;
+    font-size: 1.4rem;
+    color: #ff551f;
+}
+    
+label {
+    display: block;
+    font-family: 'Press Start 2p', Helvetica, sans-serif;
+    font-size: 0.80rem;
+}
+
+input {
+    border-color:#ff551f;
+    border-radius: 5px;
+    width: 100%;
+    padding: 4px;
+    margin: 8px 0 8px;
+    font-family: 'Geist Pixel', Helvetica, sans-serif;
+}
+
+textarea {
+    height: 100%;
+    margin-top: 8px;
+    padding: 8px;
+    resize: vertical;
+    width: 100%;
+    font-family: 'Geist Pixel', Helvetica, sans-serif;
+    border-color:#ff551f;
+    border-radius: 5px;
+}
+
+.checkbox-label {
+    display: inline-block;
+}
+.checkbox{
+    width: auto;
+    accent-color:#ff551f;
+}
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 32px;
+}
+
+.button {
+    background-color:black;
+    border: 1px solid #ff551f;
+    border-radius: 10px;
+    color:#ff551f;
+    font-family: 'Playfair Display', Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding: 8px;
+    transition: all linear 0.4s;
+
+}
+
+.button:hover {
+    background-color:#ff551f;
+    color:black;
+    border: 1px solid white;
+}
+
+.form-image {
+    height: 120px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form-image img {
+    width: 100%;
+    height: auto;
+}
