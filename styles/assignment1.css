@@ -1,49 +1,44 @@
 * {
     box-sizing: border-box;
 }
-
 html {
     height: 100vh;
 }
-
 body {
     height: 100%;
     margin: 0;
 }
-
 .header {
     position: relative;
     height: 150px;
     background-image: url(../images/header-footer.jpg.png);
     background-attachment: fixed;
-    background-size: cover;
+    background-size: cover ;
     background-position: top;
     background-repeat: no-repeat;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-
 .header-text {
     text-align: center;
 }
-
 .header-title {
-    font-family:"Oswald","jersey 25", Tahoma, sans-serif;
-    font-weight:bold;
-    -webkit-text-stroke: 2px black;
-    color: white;
+    font-family:"Space Mono", Tahoma, sans-serif;
+    font-weight: bold;
+    -webkit-text-stroke: 2px white;
+    color: #2337E4;
     font-size: 5rem;
     margin: 0;
 }
 .subtitle{
-    margin: 20px 0 0;
+    margin-bottom: 32px;
     color: rgb(159, 158, 158);
     background-color: black;
+    border-radius: 2px;
     font-family: "Geist Pixel", Tahoma, sans-serif;
     font-size: 0.9rem;
     letter-spacing: 2px;
-
 }
 .footer {
     background-image: url(../images/header-footer.jpg.png);
@@ -51,29 +46,27 @@ body {
     background-size: cover;
     background-position: bottom;
     background-repeat: no-repeat;
-    font-family: "Press Start 2p", Tahoma, sans-serif;
-    font-size: 2rem;
-    color: black;
-    -webkit-text-stroke: 2px #ff551f;
+    font-family: "Geist Pixel", Tahoma, sans-serif;
+    font-size: 1.5rem;
+    color: white;
     text-align: center;
-    font-weight: bolder;
+    font-weight: bold;
     padding: 16px;
     border-top: 8px solid black;
 }
-
 .menu {
     padding: 16px;   
     background-color: black;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
-
 .mobile-menu-trigger {
     height: 50px;
 }
-
 .mobile-menu-target {
     display: none;
 }
-
 .menu-item {
     border : 1px solid #ff551f;
     border-radius: 10px;
@@ -83,30 +76,24 @@ body {
     margin: 8px;
     font-size: 1.5rem;
     font-weight: bold;
+    font-family: 'Space Mono', 'Geist Pixel', Tahoma, sans-serif;
     cursor: pointer;
     transition: all linear 0.4s;
 }
-
 a {
     color: inherit;
     text-decoration: none;
 }
-
 .menu-item:hover {
     background-color: #ff551f;
     border-color: white;
     color: black;
 }
-
 .menu-item.active {
     background-color:black;
     color:white;
     border: 3px solid #ff551f;
-
-
 }
-
-
 .main {
     background-attachment: fixed;
     background-image: url("../images/forestpix.jpg.jpg");
@@ -116,7 +103,6 @@ a {
     min-height: 100%;
     padding: 16px 32px;
 }
-
 .content {
     border: 5px solid white;
     border-radius: 8px;
@@ -124,63 +110,59 @@ a {
     color:#ff551f;
     text-align: center;
 }
-
 .info {
     padding: 16px;
     font-size: 1.5rem;
     font-family: "Geist Pixel", Tahoma, sans-serif;
 }
-
 .info h2 {
     color: white;
-    font-family: "Playfair Display", serif;
+    font-size:1.2rem;
+    font-family: "Press Start 2p", serif;
 }
-
-
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
     .menu:hover .mobile-menu-target {
     display: block;
     }
     .header {
-        background-image: url(../images/backdrop.jpg.png);
-        width: 100%;
-        overflow: hidden;
+        background-size: 100% auto;
     }
-
+    .mobile-break {
+        display: block;
+    }        
     .header-title {
-        color: rgba(0, 0, 0, 0.1);
-        -webkit-text-stroke: 1px black;
-        width: 100%;
-        margin: 0;
-        text-align: center;
-        white-space: nowrap;
-        font-size: 16vw;
+        display: flex;
+        flex-wrap: wrap;
+        line-height: 0.85;
     }
     .subtitle{
         display: none;
     }
     .info {
-        font-size: 5vw;
+        font-size: 1.2rem;
     }
     .featured img {
         content: url("../images/crowdcrop1.jpg.png");
     }
     .footer {
-        background-image: url(../images/backdrop.jpg.png);
         text-align: center;
-        width: 100%;
-        margin: 0;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        font-family: "Geist Pixel", serif;
-        -webkit-text-stroke: 0;
-        color: white;
-        font-size: clamp(1rem, 4vw, 2rem);        
+        background-size: 100% auto;
+        font-size: 1rem;  
     }
 }
-
 @media screen and (min-width: 768px) {
+    .header-text {
+        display: flex;
+        flex-direction: column;
+    }
+    .header-title {
+        padding-top: 16px;
+        line-height: 1;
+    }
+    .mobile-break {
+        display: none;
+    }
+
     .mobile-menu-trigger {
         display: none;
     }
@@ -189,12 +171,10 @@ a {
         max-width: 940px;
         margin: auto;
     }
-
     .menu-item {
         flex: 1;
         text-align: center;
     }
-
     .featured {
         display: flex;
         max-width: 80%;
@@ -203,4 +183,7 @@ a {
     .featured img {
         width: 50%;
     }
+    .info {
+        max-width:50%;   
+    } 
 }

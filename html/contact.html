@@ -13,11 +13,12 @@
 <body>
     <header class = "header">
         <div class ="header-text">
-        <h1 class = "header-title">DEMORECTORY</h1>
+        <h1 class = "header-title">
+            DEMO<br class="mobile-break">RECTORY
+        </h1>
         <p class = "subtitle"> //welcome to demo>[di]rectory creative archive// </p>
         </div>
     </header>
-
     <nav class ="menu">
         <div class ="mobile-menu-trigger">
             <img src = "../images/menu.jpg" alt = "menu-icon" height="50px" width="50px">
@@ -34,38 +35,31 @@
            </div>
         </div>
     </nav>
-
     <main class ="main">
-
          <form class ="contact-form" action="mailto:someone@gmail.com" method="POST" enctype="text/plain">
             <fieldset>
-            <legend>personal information</legend>
-            <label for ="name"> NAME* </label>
-            <input required type ="text" id ="name" name = "name" placeholder="enter your name...">
-            <label for ="e-mail"> E-MAIL*</label>
-            <input required type ="text" id ="e-mail" name = "e-mail" placeholder="enter your e-mail adress...">
+                <legend>personal information</legend>
+                <label for ="name"> NAME* </label>
+                <input required type ="text" id ="name" name = "name" placeholder="enter your name...">
+                <label for ="e-mail"> E-MAIL*</label>
+                <input required type ="text" id ="e-mail" name = "e-mail" placeholder="enter your e-mail adress...">
             </fieldset>
-            
            <div class="form-image">
-            <img src="../images/message.jpg" alt ="contact-image">
+                <img src="../images/message.jpg" alt ="contact-image">
            </div>
-
             <fieldset>
                 <legend>comments</legend>
-                <label for ="comment">FEEL FREE TO SAY ANYTHING</label>
-                <textarea id ="comment" name ="comment"></textarea>
+                <label for ="comment">SPEAK YOUR MIND*</label>
+                <textarea id ="comment" name ="comment" required></textarea>
                 <label class ="checkbox-label"for ="more-info">SIGN ME UP FOR NEWSLETTER</label>
-                <input class="checkbox" type = "checkbox" checked id ="newsletter" name ="newsletter" value="information">
+                <input class="checkbox" type = "checkbox" checked id ="newsletter" name ="newsletter" value="yes">
                 <label class ="checkbox-label"for ="more-info">ARCHIVE UPDATE ALERT</label>
-                <input class="checkbox" type = "checkbox" checked id ="alert" name ="alert" value="information">
+                <input class="checkbox" type = "checkbox" checked id ="alert" name ="alert" value="yes">
             </fieldset>
-
             <div class="button-container">
                 <button class ="button" type="submit">SEND</button>
             </div>            
         </form>
-        
-
     </main>
     <footer class = "footer">
           <p>&copy;2026 Jonatan Karlsson </p>
